@@ -1,0 +1,90 @@
+
+===== Évaluation de TF-IDF & MNB =====
+Best parameters: {'nb__alpha': 0.1, 'tfidf__max_df': 0.85, 'tfidf__min_df': 1, 'tfidf__ngram_range': (1, 2), 'tfidf__smooth_idf': True, 'tfidf__sublinear_tf': True, 'tfidf__use_idf': False}
+Best cross-validation score: 0.8823
+Test accuracy: 0.8863
+Classification Report:
+              precision    recall  f1-score   support
+
+           1       0.89      0.88      0.88      6283
+           2       0.94      0.96      0.95      6466
+           3       0.85      0.86      0.85      6370
+           4       0.87      0.85      0.86      6401
+
+    accuracy                           0.89     25520
+   macro avg       0.89      0.89      0.89     25520
+weighted avg       0.89      0.89      0.89     25520
+
+
+
+===== Évaluation de TF-IDF & SVM =====
+Best parameters: {'classifier__C': 0.825, 'tfidf__max_df': 0.85, 'tfidf__min_df': 1, 'tfidf__ngram_range': (1, 2), 'tfidf__smooth_idf': False, 'tfidf__sublinear_tf': True, 'tfidf__use_idf': True}
+Best cross-validation score: 0.8864
+Test accuracy: 0.8897
+Classification Report:
+              precision    recall  f1-score   support
+
+           1       0.91      0.87      0.89      6283
+           2       0.93      0.97      0.95      6466
+           3       0.86      0.86      0.86      6370
+           4       0.86      0.86      0.86      6401
+
+    accuracy                           0.89     25520
+   macro avg       0.89      0.89      0.89     25520
+weighted avg       0.89      0.89      0.89     25520
+
+
+
+
+===== Évaluation de TF-IDF & SVM =====
+Best parameters: {'classifier__C': 0.825, 'tfidf__max_df': 0.85, 'tfidf__min_df': 1, 'tfidf__ngram_range': (1, 2), 'tfidf__smooth_idf': False, 'tfidf__sublinear_tf': True, 'tfidf__use_idf': True}
+Best cross-validation score: 0.8864
+Test accuracy: 0.8897
+Classification Report:
+              precision    recall  f1-score   support
+
+           1       0.91      0.87      0.89      6283
+           2       0.93      0.97      0.95      6466
+           3       0.86      0.86      0.86      6370
+           4       0.86      0.86      0.86      6401
+
+    accuracy                           0.89     25520
+   macro avg       0.89      0.89      0.89     25520
+weighted avg       0.89      0.89      0.89     25520
+
+
+
+===== Évaluation de Word embedding & SVM =====
+Best parameters: {'C': 0.32727272727272727}
+Best cross-validation score: 0.8481
+Test accuracy: 0.8471
+Classification Report:
+              precision    recall  f1-score   support
+
+           1       0.86      0.84      0.85      6283
+           2       0.90      0.94      0.92      6466
+           3       0.81      0.81      0.81      6370
+           4       0.81      0.80      0.81      6401
+
+    accuracy                           0.85     25520
+   macro avg       0.85      0.85      0.85     25520
+weighted avg       0.85      0.85      0.85     25520
+
+
+
+Model DL :
+
+[1m798/798[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m27s[0m 34ms/step
+              precision    recall  f1-score   support
+
+           0       0.90      0.85      0.88      6325
+           1       0.92      0.97      0.94      6435
+           2       0.85      0.83      0.84      6471
+           3       0.84      0.85      0.85      6289
+
+    accuracy                           0.88     25520
+   macro avg       0.88      0.88      0.88     25520
+weighted avg       0.88      0.88      0.88     25520
+
+
+
